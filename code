@@ -1,0 +1,220 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 #include <iostream>\par
+using namespace std;\par
+int restart(int firstselection,int secondselection,int thirdselection,int fourthselection,int fifthselection,int sixthselection);\par
+void sixthlevel(int firstselection,int secondselection,int thirdselection,int fourthselection,int fifthselection,int sixthselection)\par
+\{\par
+\tab int y=0;\par
+\tab cout<<"congratulations, you have reached the final level"<<endl;\par
+\tab cout <<"after a while the police arrive and arrested the burglars, what are you doing?"<<endl;\par
+\tab cout <<"press 1 you lose your mind and start burdening everyone with the carbine"<<endl;\par
+\tab cout <<"press 2 you tell the truth and show them disapproving verses"<<endl;\par
+\tab cout <<"press 3 you lose your mind and commit suicide"<<endl;\par
+\tab cin >>sixthselection;\par
+\tab switch(sixthselection)\{\par
+\tab\tab case 1: \{\par
+\tab\tab\tab cout << "you lost.do you want to restart?"<<endl;\par
+\tab\tab\tab cout << "press 1 for yes  and 2 for no"<<endl;\par
+\tab\tab\tab y= restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab case 2:\{\par
+\tab\tab\tab cout << "you win.if you want to play again press 1 or press 2 to exit"<<endl;\par
+\tab\tab\tab y=restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab case 3:\{\par
+\tab\tab     cout << "you lost.do you want to restart?"<<endl;\par
+\tab\tab\tab cout << "press 1 for yes  and 2 for no"<<endl;\par
+\tab\tab\tab y=restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab default: \{\par
+\tab\tab sixthlevel(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab break;\par
+\tab\}\par
+\tab\}\par
+\}\par
+void fifthlevel(int firstselection,int secondselection,int thirdselection,int fourthselection,int fifthselection,int sixthselection)\par
+ \{\par
+ \tab int y=0;\par
+ \tab cout<<"fifth level"<<endl;\par
+ \tab cout <<"while you are in the loft they enter the room,what do you do?"<<endl;\par
+\tab cout <<"press 1 you come out of the loft and shoot them with the carbine you found"<<endl;\par
+\tab cout <<"press 2 you wait quietly until the police come"<<endl;\par
+\tab cout <<"press 3 you come out of the loft and try to stab them"<<endl;\par
+\tab cin >>fifthselection;\par
+\tab switch(fifthselection)\{\par
+\tab\tab case 1:\{\par
+\tab\tab\tab cout << "you lost.do you want to restart?"<<endl;\par
+\tab\tab\tab cout << "press 1 for yes  and 2 for no"<<endl;\par
+\tab\tab\tab y=restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab case 2:\{\par
+\tab\tab\tab sixthlevel(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab case 3:\{\par
+\tab\tab cout << "you lost.do you want to restart?"<<endl;\par
+\tab\tab cout << "press 1 for yes  and 2 for no"<<endl;\par
+\tab\tab y=restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab default: \{\par
+\tab\tab fifthlevel(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab break;\par
+\tab\}\par
+\tab\}\par
+\}\par
+void fourthlevel(int firstselection,int secondselection,int thirdselection,int fourthselection,int fifthselection,int sixthselection)\par
+\{\par
+\tab int y=0;\par
+\tab cout<<"fourth level"<<endl;\par
+\tab cout <<"after you put the cameras to record video you hear them approaching the room,what do you do?"<<endl;\par
+\tab cout <<"press 1 you cry for help"<<endl;\par
+\tab cout <<"press 2 you go up to the hidden loft so that they do not see you"<<endl;\par
+\tab cout <<"press 3 defend your self"<<endl;\par
+\tab cin >>fourthselection;\par
+\tab switch(fourthselection)\{\par
+\tab\tab case 1:\{\par
+\tab\tab\tab cout << "you lost.do you want to restart?"<<endl;\par
+\tab\tab\tab cout << "press 1 for yes  and 2 for no"<<endl;\par
+\tab\tab\tab y=restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab case 2:\{\par
+\tab\tab\tab fifthlevel(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab case 3:\{\par
+\tab\tab     cout << "you lost.do you want to restart?"<<endl;\par
+\tab\tab\tab cout << "press 1 for yes  and 2 for no"<<endl;\par
+\tab\tab\tab y=restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab default: \{\par
+\tab\tab fourthlevel(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab break;\par
+\tab\}\par
+\tab\}\par
+\}\par
+void thirdlevel(int firstselection,int secondselection,int thirdselection,int fourthselection,int fifthselection,int sixthselection)\par
+\{\par
+\tab int y=0;\par
+\tab cout<<"third level"<<endl;\par
+\tab cout <<"while you're on the phone with the police, you hear them banging  on your door, what do you do?"<<endl;\par
+\tab cout <<"press 1 you put your cameras on video so you can have proof afterwards"<<endl;\par
+\tab cout <<"press 2 you're hiding under the bed"<<endl;\par
+\tab cout<<"press 3 you're hiding in the closet "<<endl;\par
+\tab cin >>thirdselection;\par
+\tab switch(thirdselection)\{\par
+\tab\tab case 1:\{\par
+\tab\tab fourthlevel(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab case 2:\{\par
+\tab\tab\tab cout << "you lost.do you want to restart?"<<endl;\par
+\tab\tab\tab cout << "press 1 for yes  and 2 for no"<<endl;\par
+\tab\tab\tab y=restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab case 3:\{\par
+\tab\tab     cout << "you lost.do you want to restart?"<<endl;\par
+\tab\tab\tab cout << "press 1 for yes  and 2 for no"<<endl;\par
+\tab\tab\tab y=restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab default: \{\par
+\tab\tab thirdlevel(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab break;\par
+\tab\}\par
+\tab\}\par
+\}\par
+void secondlevel(int firstselection,int secondselection,int thirdselection,int fourthselection,int fifthselection,int sixthselection)\par
+\{\par
+\tab int y=0;\par
+\tab cout<<"second level"<<endl;\par
+\tab cout <<"through the cameras you see 3 people breaking into your house, what do you do?"<<endl;\par
+\tab cout <<"press 1 take a knife from the kitchen"<<endl;\par
+\tab cout <<"press 2 jump out the window"<<endl;\par
+\tab cout <<"press 3 call the police"<<endl;\par
+\tab cin >>secondselection;\par
+\tab switch(secondselection)\{\par
+\tab\tab case 1:\{\par
+\tab\tab\tab cout << "you lost.do you want to restart?"<<endl;\par
+\tab\tab\tab cout << "press 1 for yes  and 2 for no"<<endl;\par
+\tab\tab\tab y=restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab case 2:\{\par
+\tab\tab     cout << "you lost.do you want to restart?"<<endl;\par
+\tab\tab\tab cout << "press 1 for yes  and 2 for no"<<endl;\par
+\tab\tab\tab y=restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab case 3:\{\par
+\tab\tab\tab thirdlevel(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab default: \{\par
+\tab\tab secondlevel(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab break;\par
+\tab\}\par
+\tab\}\par
+\}\par
+void firstlevel(int firstselection,int secondselection,int thirdselection,int fourthselection,int fifthselection,int sixthselection)\par
+\{   int y=0;\par
+\tab cout <<"you wake up in the middle of the night because you hear your dogs barking loudly, what do you do?" <<endl;\par
+\tab cout << "press 1 watch the cameras on your phone to see what's going on"<<endl;\par
+\tab cout << "press 2 you shout loudly to quiet the dogs"<<endl;\par
+\tab cout << "press 3 to turn on the lights in the room"<<endl;\par
+\tab cin >> firstselection;\par
+\tab switch(firstselection)\{\par
+\tab\tab case 1:\{\par
+\tab\tab\tab secondlevel(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab case 2:\{\par
+\tab\tab\tab cout << "you lost.do you want to restart?"<<endl;\par
+\tab\tab\tab cout << "press 1 for yes  and 2 for no"<<endl;\par
+\tab\tab\tab y=restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab case 3:\{cout << "you lost.do you want to restart?"<<endl;\par
+\tab\tab\tab cout << "press 1 for yes  and 2 for no"<<endl;\par
+\tab\tab\tab y=restart(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab\tab break;\par
+\tab\tab\}\par
+\tab\tab\par
+\tab\tab default: \{\par
+\tab\tab firstlevel(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab break;\par
+\tab\}\par
+\tab\}\par
+\}\par
+int main(int argc, char** argv) \{\par
+int firstselection=0, secondselection=0, thirdselection=0,fourthselection=0,fifthselection=0,sixthselection=0;\par
+\tab firstlevel(firstselection,secondselection,thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab return 0;\par
+\}\par
+int restart(int firstselection, int secondselection, int thirdselection,int fourthselection,int fifthselection,int sixthselection) \{\par
+\tab int k=0;\par
+\tab int x;\par
+\tab cin >> x;\par
+\tab switch (x) \{\par
+\tab case 1: \{\par
+\tab\tab cout << "restart" << endl;\par
+\tab\tab firstlevel(firstselection, secondselection, thirdselection,fourthselection,fifthselection,sixthselection);\par
+\tab\tab break;\par
+\tab\}\par
+\tab default: \{\par
+\tab     cout << "thank you for taking the time to play our game " << endl;\par
+\tab\tab break;\par
+\tab\}\par
+\tab\}\par
+\tab return k;\par
+\}\par
+}
+ 
